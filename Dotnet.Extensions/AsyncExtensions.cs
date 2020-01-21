@@ -24,10 +24,11 @@ namespace Dotnet.Extensions
         public static Task<T> FromCanceled<T>(this CancellationToken cancellationToken)
         {
 #pragma warning disable CS8653 // A default expression introduces a null value for a type parameter.
+#pragma warning disable HAA0303 // Lambda or anonymous method in a generic method allocates a delegate instance
             return new Task<T>(() => default, cancellationToken);
+#pragma warning restore HAA0303 // Lambda or anonymous method in a generic method allocates a delegate instance
 #pragma warning restore CS8653 // A default expression introduces a null value for a type parameter.
         }
-
 
         public static Task WriteAsync(this TextWriter writer, char value, CancellationToken cancellationToken)
         {
