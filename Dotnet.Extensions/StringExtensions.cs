@@ -153,5 +153,68 @@ namespace Dotnet.Extensions
 
             return new string(chars);
         }
+
+        public static bool IsBoolean(this string input)
+        {
+          return  bool.TryParse(input, out _); // Discards
+        }
+
+
+        public static bool IsBoolean(this string input, out bool result)
+        {
+            return bool.TryParse(input, out result);
+        }
+
+        public static bool IsDateTime(this string input)
+        {
+            return DateTime.TryParse(input, out _); //Discards;
+        }
+
+        public static bool IsDateTime(this string input, out DateTime result)
+        {
+            return DateTime.TryParse(input, out result);
+        }
+
+        public static bool IsDateTime(this string input, string format)
+        {
+            return DateTime.TryParseExact(input, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out _); //Discards
+        }
+
+        public static bool IsDateTime(this string input, string format, out DateTime result)
+        {
+            return DateTime.TryParseExact(input, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
+        }
+
+        public static bool IsDouble(this string input)
+        {
+           return  double.TryParse(input, out _); //Discards
+        }
+
+        public static bool IsDouble(this string input, out double result)
+        {
+           return  double.TryParse(input, out result);
+        }
+
+        public static bool IsInt(this string input)
+        {
+            return int.TryParse(input, out _); //Discards
+        }
+
+
+        public static bool IsInt(this string input, out int result)
+        {
+            return int.TryParse(input, out result);
+        }
+
+        public static bool IsLong(this string input)
+        {
+            return long.TryParse(input, out _); //Discards
+        }
+
+
+        public static bool IsLong(this string input, out long result)
+        {
+            return long.TryParse(input, out result);
+        }
     }
 }
