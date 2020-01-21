@@ -48,15 +48,5 @@ namespace Dotnet.Extensions
         {
             return cancellationToken.IsCancellationRequested ? FromCanceled<int>(cancellationToken) : reader.ReadAsync(buffer, index, count);
         }
-
-        public static bool IsCompletedSucessfully(this Task task)
-        {
-            // IsCompletedSucessfully is the faster method, but only currently exposed on .NET Core 2.0
-#if NETCOREAPP2_0
-            return task.IsCompletedSucessfully;
-#else
-            return task.Status == TaskStatus.RanToCompletion;
-#endif
-        }
     }
 }
