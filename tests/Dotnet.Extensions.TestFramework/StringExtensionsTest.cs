@@ -13,5 +13,15 @@ namespace Dotnet.Extensions.TestFramework
             Assert.IsTrue(((string)null).IsNullOrEmpty());
             Assert.IsFalse("Hi".IsNullOrEmpty());
         }
+
+        [TestMethod]
+        public void IsNullOrWhiteSpaceTest()
+        {
+            Assert.IsTrue("".IsNullOrWhiteSpace());
+            Assert.IsTrue("             ".IsNullOrWhiteSpace());
+            Assert.IsTrue(((string)null).IsNullOrEmpty());
+            Assert.IsFalse("Hi".IsNullOrEmpty());
+            Assert.IsFalse("                    Hi                  ".IsNullOrEmpty());
+        }
     }
 }

@@ -94,7 +94,7 @@ namespace Dotnet.Extensions
             }
 
             //empty array
-            return new string[0];
+            return ArrayExtensions.ArrayEmpty<string>();
         }
 
         /// <summary>
