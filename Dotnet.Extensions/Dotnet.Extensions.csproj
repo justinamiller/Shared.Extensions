@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Justin Miller</Authors>
+    <Company />
+    <Description>.NET library for commonly used programming patterns and utilities</Description>
+    <PackageProjectUrl>https://github.com/justinamiller/Dotnet.Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/justinamiller/Dotnet.Extensions</RepositoryUrl>
+    <PackageTags>extension, helper</PackageTags>
+    <PackageId>Shared.DotNet.Extensions</PackageId>
   </PropertyGroup>
 
 </Project>
