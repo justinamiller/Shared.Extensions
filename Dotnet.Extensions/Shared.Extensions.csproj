@@ -6,10 +6,11 @@
     <Authors>Justin Miller</Authors>
     <Company />
     <Description>.NET library for commonly used programming patterns and utilities</Description>
-    <PackageProjectUrl>https://github.com/justinamiller/Dotnet.Extensions</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/justinamiller/Dotnet.Extensions</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/justinamiller/Shared.Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/justinamiller/Shared.Extensions</RepositoryUrl>
     <PackageTags>extension, helper</PackageTags>
     <PackageId>Shared.DotNet.Extensions</PackageId>
+    <Product>Shared.Extensions</Product>
   </PropertyGroup>
 
 </Project>

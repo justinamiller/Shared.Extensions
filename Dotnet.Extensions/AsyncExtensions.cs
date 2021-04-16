@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Dotnet.Extensions
+namespace Shared.Extensions
 {
     public static class AsyncExtensions
     {

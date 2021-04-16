@@ -5,7 +5,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace Dotnet.Extensions
+namespace Shared.Extensions
 {
     public static class AssemblyExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Dotnet.Extensions
+namespace Shared.Extensions
 {
     public static class StringExtensions
     {

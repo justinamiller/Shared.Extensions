@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dotnet.Extensions
+namespace Shared.Extensions
 {
     public static class CharExtensions
     {
